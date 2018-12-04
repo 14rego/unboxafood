@@ -1,7 +1,7 @@
 import React from 'react';
 import ContainerHeader from 'components/ContainerHeader/index';
 import IntlMessages from 'util/IntlMessages';
-import unboxapi from 'unboxapi/unboxapi';
+import { unboxapi } from 'unboxapi/unboxapi';
 
 class SamplePage extends React.Component {
   constructor(props) {
@@ -37,7 +37,7 @@ class SamplePage extends React.Component {
         </div>
         <ul>
           {this.state.users.map(user => (
-            <li key={user.username}>{user.username}</li>
+            <li key={user.id}>{user.id}</li>
           ))}
         </ul>
       </div>
